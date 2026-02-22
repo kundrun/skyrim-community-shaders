@@ -1,0 +1,47 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema",
+    "$id": "https://github.com/doodlum/skyrim-community-shaders/schema/truepbr/material-objects",
+    "title": "Skyrim Community Shaders - TruePBR Material Object Properties Schema",
+    "type": "object",
+    "unevaluatedProperties": false,
+    "properties": {
+        "$schema": true,
+        "baseColorScale": {
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 3,
+            "additionalItems": false,
+            "uniqueItems": false,
+            "items": {
+                "type": "number"
+            }
+        },
+        "glintParameters": {
+            "type": "object",
+            "unevaluatedProperties": false,
+            "properties": {
+                "enabled": {
+                    "type": "boolean"
+                },
+                "densityRandomization": {
+                    "type": "number"
+                },
+                "logMicrofacetDensity": {
+                    "type": "number"
+                },
+                "microfacetRoughness": {
+                    "type": "number"
+                },
+                "screenSpaceScale": {
+                    "type": "number"
+                }
+            }
+        },
+        "roughness": {
+            "type": "number"
+        },
+        "specularLevel": {
+            "type": "number"
+        }
+    }
+}

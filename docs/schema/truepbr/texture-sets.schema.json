@@ -1,0 +1,19 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema",
+    "$id": "https://github.com/doodlum/skyrim-community-shaders/schema/truepbr/texture-sets",
+    "title": "Skyrim Community Shaders - TruePBR Texture Set Properties Schema",
+    "type": "object",
+    "unevaluatedProperties": false,
+    "properties": {
+        "$schema": true,
+        "roughnessScale": {
+            "type": "number"
+        },
+        "displacementScale": {
+            "type": "number"
+        },
+        "specularLevel": {
+            "type": "number"
+        }
+    }
+}
