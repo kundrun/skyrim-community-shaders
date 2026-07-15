@@ -14,6 +14,69 @@
         },
         "specularLevel": {
             "type": "number"
+        },
+        "subsurfaceColor": {
+            "$ref": "#/definitions/niColor"
+        },
+        "subsurfaceOpacity": {
+            "type": "number"
+        },
+        "coatColor": {
+            "$ref": "#/definitions/niColor"
+        },
+        "coatStrength": {
+            "type": "number"
+        },
+        "coatRoughness": {
+            "type": "number"
+        },
+        "coatSpecularLevel": {
+            "type": "number"
+        },
+        "innerLayerDisplacementOffset": {
+            "type": "number"
+        },
+        "fuzzColor": {
+            "$ref": "#/definitions/niColor"
+        },
+        "fuzzWeight": {
+            "type": "number"
+        },
+        "glintParameters": {
+            "$ref": "#/definitions/glintParameters"
+        }
+    },
+    "definitions": {
+        "niColor": {
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 3,
+            "additionalItems": false,
+            "uniqueItems": false,
+            "items": {
+                "type": "number"
+            }
+        },
+        "glintParameters": {
+            "type": "object",
+            "unevaluatedProperties": false,
+            "properties": {
+                "enabled": {
+                    "type": "boolean"
+                },
+                "densityRandomization": {
+                    "type": "number"
+                },
+                "logMicrofacetDensity": {
+                    "type": "number"
+                },
+                "microfacetRoughness": {
+                    "type": "number"
+                },
+                "screenSpaceScale": {
+                    "type": "number"
+                }
+            }
         }
     }
 }
